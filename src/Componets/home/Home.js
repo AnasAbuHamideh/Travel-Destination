@@ -6,16 +6,14 @@ import ReactDOM from 'react-dom';
 import  toursdata from "../../data/db.json";
 
 function Home(){
+return (
+ <>   
 
-    
-ReactDOM.render(
-    <React.StrictMode>
       <Header />
-      <Tours data={toursdata}/>  
-      <Footer/> 
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+      <Tours />  
+      <Footer />
+ </>   
 
-  }
+)
+}
   export default Home;
